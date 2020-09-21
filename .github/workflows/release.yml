@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
       - name: Generate changelog
         id: generate_changelog
-        uses: sebastien-boulle/generator-changelog@master
+        uses: sebastien-boulle/changelog-generator@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
